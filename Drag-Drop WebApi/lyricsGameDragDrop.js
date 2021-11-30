@@ -1,3 +1,22 @@
+const resetQuiz = document.getElementById('reset_quiz');
+let attemptsCounter = document.getElementById('attempts_counter');
+let resetCounter = 0;
+let attemptsText = document.getElementById('attempts');
+resetQuiz.addEventListener('click', e => {
+    jumbledWords.forEach(el => {
+        el.className = '';
+        el.setAttribute('draggable', true);
+    });
+    orderedWords.forEach(el => {
+        el.innerHTML = '';
+    });
+    resetCounter++;
+    attemptsText.style.visibility = 'visible';
+    attemptsCounter.innerHTML = resetCounter;
+    resetQuiz.setAttribute('disabled', true);
+    resetQuiz.style.cursor = 'not-allowed';
+});
+
 const jumbledWords = document.querySelectorAll('#jumbledWordsWrapper > span');
 const orderedWords = document.querySelectorAll('#orderedWordsWrapper > span');
 console.log('jumbledWords: ', jumbledWords);
@@ -65,4 +84,6 @@ function dropHandler(e) {
             draggable: false,
         });
     }
+    resetQuiz.removeAttribute('disabled');
+    resetQuiz.style.cursor = 'pointer';
 }

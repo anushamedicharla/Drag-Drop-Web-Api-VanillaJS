@@ -11,8 +11,14 @@
         <!-- In this section, we’ll build a very, very, simple game. We’ll have a row of spans with jumbled lyrics to a famous song.
         The user can now drag and drop the words from the first row onto the empty slots in the second row.
         The goal of the game is to place the lyrics in the correct order. -->
-        <h1>Famous lyrics game: Abba</h1>
+        
+        <div class="title_section">
+            <h1>Famous lyrics game: Abba</h1>
+            <h3 class="attempts" id="attempts">Attempts: <span class="attempts_counter" id="attempts_counter">1</span></h3>
+        </div>
+        
         <h2>Instruction: Drag the lyrics in the right order.</h2>
+        
         <div id="jumbledWordsWrapper">
         <span id="again" data-source-id="again" draggable="true">again</span>
         <span id="go" data-source-id="go" draggable="true">go</span>
@@ -21,6 +27,7 @@
         <span id="mia" data-source-id="mia" draggable="true">mia</span>
         <span id="Mamma" data-source-id="Mamma" draggable="true">Mamma</span>
         </div>
+        
         <div id="orderedWordsWrapper">
             <span data-target-id="Mamma"></span>
             <span data-target-id="mia"></span>
@@ -29,6 +36,8 @@
             <span data-target-id="go"></span>
             <span data-target-id="again"></span>
         </div>
+
+        <button class="reset" id="reset_quiz">Reset</button>
 
         <script src="lyricsGameDragDrop.js"></script>
     </body>
