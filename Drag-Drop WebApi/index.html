@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Understanding Drag Drop Web Api</title>
+        <style>
+            #source {
+                background: wheat;
+                width: 100px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #target {
+                background: #abcdef;
+                width: 360px;
+                height: 180px;
+                padding: 20px 40px;
+                text-align: center;
+                margin-top: 50px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Learning source: https://dev.to/jscrambler/build-a-simple-game-in-vanilla-js-with-the-drag-and-drop-api-58lf?utm_source=echojs.com&utm_medium=referral&utm_campaign=build-simple-game -->
+        <!-- Draggale="true" converts an element to a draggable one -->
+        <div id="source" draggable="true">Source</div>
+        <div id="target">Target</div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

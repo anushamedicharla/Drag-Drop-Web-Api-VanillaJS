@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lyrics Game Drag Drop</title>
+        <link rel="stylesheet" href="lyricsGameStyle.css">
+    </head>
+    <body>
+        <!-- In this section, we’ll build a very, very, simple game. We’ll have a row of spans with jumbled lyrics to a famous song.
+        The user can now drag and drop the words from the first row onto the empty slots in the second row.
+        The goal of the game is to place the lyrics in the correct order. -->
+        <h1>Famous lyrics game: Abba</h1>
+        <h2>Instruction: Drag the lyrics in the right order.</h2>
+        <div id="jumbledWordsWrapper">
+        <span id="again" data-source-id="again" draggable="true">again</span>
+        <span id="go" data-source-id="go" draggable="true">go</span>
+        <span id="I" data-source-id="I" draggable="true">I</span>
+        <span id="here" data-source-id="here" draggable="true">here</span>
+        <span id="mia" data-source-id="mia" draggable="true">mia</span>
+        <span id="Mamma" data-source-id="Mamma" draggable="true">Mamma</span>
+        </div>
+        <div id="orderedWordsWrapper">
+            <span data-target-id="Mamma"></span>
+            <span data-target-id="mia"></span>
+            <span data-target-id="here"></span>
+            <span data-target-id="I"></span>
+            <span data-target-id="go"></span>
+            <span data-target-id="again"></span>
+        </div>
+
+        <script src="lyricsGameDragDrop.js"></script>
+    </body>
+</html>

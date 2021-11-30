@@ -1,0 +1,28 @@
+body {
+    padding: 40px;
+  }
+  h2 {
+    margin-bottom: 50px;
+  }
+  #jumbledWordsWrapper span,
+  #orderedWordsWrapper span {
+    background: wheat;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    padding: 15px 25px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;  
+  }
+  #orderedWordsWrapper span {
+    background: #abcdef;
+    margin-top: 50px;
+  }
+  .no-longer-draggable {
+    cursor: not-allowed !important;
+    background: lightgray !important;
+    opacity: 0.5 !important;
+  }
