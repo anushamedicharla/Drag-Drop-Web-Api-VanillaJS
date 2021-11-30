@@ -8,9 +8,9 @@
 ![png](HTML_img.png)
 <br />
 # Enhancements:
-- Add Reset button.
+- Add Reset button :heavy_check_mark: <br />
 - Add a start and end screen;<br />
-- Add a counter that would count the number of attempts;<br />
+- Add a counter that would count the number of attempts :heavy_check_mark: <br />
 - Add a countdown timer that would not limit the number of attempts, but rather the time available for us to complete our puzzle game;<br />
 - Add more questions;<br />
 - Add a leaderboard (we’d need to persist our data somehow);<br />
